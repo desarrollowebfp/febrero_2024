@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-primary: #504037;
+  --color-secondary: #f2f2f2;
+  --color-highlight: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 20px;
+  margin: 10px;
+  border: 1px dashed var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong {
+  color: var(--color-highlight);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-highlight);
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+}
+
+header img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px dashed var(--color-primary);
+  padding: 10px;
+}
+
+header nav {
+  margin: 20px 0;
+}
+
+/* SECTIONS */
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  text-align: center;
+  border-bottom: 1px dashed var(--color-primary);
+  margin: 10px 0;
+}
+
+section p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+/* FORM */
+form > * {
+  display: block;
+  margin: 10px auto;
+}
+
+form {
+  text-align: center;
+}
+
+form > textarea {
+  border: 1px dashed var(--color-primary);
+  border-radius: 10px;
+}
+
+form > input {
+  border: 1px dashed var(--color-primary);
+  outline: none;
+  padding: 10px 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  background: transparent;
+  transition: 0.2s;
+}
+
+form > input:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  main,
+  footer {
+    padding: 0 25%;
+  }
+}
