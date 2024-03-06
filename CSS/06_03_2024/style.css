@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #202325;
+  --secondary-color: #f3d361;
+  --highlight-color: #fcfcfc;
+  --spacing: 20px;
+  --border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: var(--spacing);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--highlight-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  min-height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+}
+
+header h1 {
+  text-align: center;
+}
+
+header img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: var(--spacing);
+}
+
+@media (max-width: 550px) {
+  header h1 {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+#sobremi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  margin: 20px 0;
+}
+
+#proyectos {
+  margin: 20px 0;
+}
+
+#proyectos > ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  margin: 20px 0;
+}
+
+#proyectos h3 {
+  color: var(--highlight-color);
+}
+
+#proyectos li {
+  width: 350px;
+  min-height: 200px;
+  flex-grow: 1;
+  padding: var(--spacing);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+#contacto {
+  margin: 20px 0;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+#contacto form > * {
+  width: 350px;
+  text-align: center;
+}
+
+#contacto input {
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: var(--highlight-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+footer {
+  padding: var(--spacing);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
