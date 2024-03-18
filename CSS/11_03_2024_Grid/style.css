@@ -36,6 +36,10 @@ section:hover img:not(:hover) {
   opacity: 40%;
 }
 
+section > img:nth-child(1){
+  object-position: center ;
+}
+
 /* section > img:nth-child(2){
   grid-column: 2/6;
   grid-row: 1/3

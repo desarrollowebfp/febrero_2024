@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 120px 1fr 120px;
+  grid-template-rows:
+    120px
+    1fr
+    120px;
+  grid-template-areas:
+    "my-header my-header my-header"
+    "my-aside my-main my-section"
+    "my-footer my-footer my-footer";
+}
+
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      120px
+      120px
+      1fr
+      120px
+      120px;
+    grid-template-areas:
+     "my-header"
+     "my-aside"
+     "my-main"
+     "my-section"
+     "my-footer"
+  }
+}
+
+header {
+  background-color: crimson;
+  grid-area: my-header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  background-color: greenyellow;
+  grid-area: my-aside;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: cadetblue;
+  grid-area: my-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: orange;
+  grid-area: my-section;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: crimson;
+  grid-area: my-footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
