@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+:root {
+  --color-coffee: #603809;
+  --color-black: #1e1e1e;
+  --color-grey: #707070;
+  --color-highlight: #f9c06a;
+  --color-white: #ffffff;
+  --spacing: 40px;
+  --small-spacing: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair", serif;
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.highlight-link {
+  background-color: var(--color-highlight);
+  padding: 10px 20px;
+  color: var(--color-coffee);
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 2px 3px 31px -9px rgba(249, 192, 106, 0.58);
+  width: fit-content;
+  font-size: 18px;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  height: 100vh;
+  background: radial-gradient(circle, rgba(31, 31, 131, 0) 50%, #000000 100%),
+    url(./assets/hero.png);
+  background-size: cover;
+  background-position: left;
+}
+
+header > nav {
+  height: 120px;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header .bean-scene {
+  font-family: "Clicker Script", cursive;
+  font-size: 30px;
+}
+
+header ul {
+  display: flex;
+  gap: var(--spacing);
+}
+
+header span {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header span {
+    display: block;
+    font-size: 30px;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  header nav {
+    justify-content: space-between;
+    padding: 0 var(--spacing);
+  }
+}
+
+.hero {
+  color: var(--color-white);
+  padding: var(--spacing);
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 600px;
+  gap: var(--small-spacing);
+}
+
+.hero h2 {
+  font-size: 200px;
+  font-weight: 100;
+  font-family: "Clicker Script", cursive;
+}
+
+.discover {
+  height: 60vh;
+  padding: var(--spacing);
+  color: var(--color-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discover div {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 600px;
+  gap: var(--small-spacing);
+}
+
+.discover h2 {
+  color: var(--color-coffee);
+}
+
+.discover img {
+  width: 300px;
+}
+
+.blast {
+  position: absolute;
+  left: 0;
+  transform: rotateX(180deg);
+
+}
