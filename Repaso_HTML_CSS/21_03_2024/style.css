@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --ps-white: whitesmoke;
+  --ps-green: #b9ff66;
+  --ps-black: #191a23;
+  --ps-grey: #f3f3f3;
+  --spacing: 40px;
+  --small-spacing: 20px;
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  font-size: 18px;
+  color: var(--ps-black);
+  background-color: var(--ps-white);
+  padding: var(--spacing);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--ps-black);
+  text-decoration: none;
+}
+
+header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .logo,
+header ul {
+  display: flex;
+  gap: var(--small-spacing);
+  align-items: center;
+}
+
+header ul {
+  gap: var(--spacing);
+}
+header > .logo > img {
+  height: 30px;
+  width: 30px;
+}
+
+header .outline_link {
+  border: 1px solid var(--ps-black);
+  padding: var(--small-spacing);
+  border-radius: var(--radius);
+}
+
+header span {
+  display: none;
+}
+
+@media (max-width: 1060px) {
+  header ul {
+    display: none;
+  }
+  header span {
+    display: block;
+  }
+}
+
+.hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero .filled_link {
+  padding: var(--small-spacing);
+  border-radius: var(--radius);
+  background-color: var(--ps-black);
+  color: var(--ps-white);
+  width: fit-content;
+  height: auto;
+}
+.hero > div {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.hero > img {
+  width: 400px;
+  height: auto;
+  padding: var(--spacing);
+}
+
+@media (max-width: 500px) {
+  .hero .filled_link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.sponsors > ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--small-spacing)
+}
+
+.sponsors img {
+  height: 40px;
+  width: auto;
+  filter: grayscale(100%)
+}
+
+.sponsors img:hover{
+  filter: grayscale(0)
+}
+
+@media (max-width: 840px){
+  .sponsors > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}

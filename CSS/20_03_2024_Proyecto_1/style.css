@@ -55,6 +55,7 @@ header > nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  backdrop-filter: blur(5px);
 }
 
 header .bean-scene {
@@ -133,5 +134,4 @@ header span {
   position: absolute;
   left: 0;
   transform: rotateX(180deg);
-
 }
