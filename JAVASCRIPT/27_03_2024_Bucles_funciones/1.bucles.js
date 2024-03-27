@@ -90,3 +90,8 @@ for (let i = 0; i < dogs.length; i++) {
 for (const dog of dogs) {
   console.log(dog);
 }
+
+//Foreach
+dogs.forEach((dog) => {
+  console.log(dog);
+});
