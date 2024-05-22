@@ -1,0 +1,11 @@
+header{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header ul{
+  display:flex;
+  gap: 20px;
+}
