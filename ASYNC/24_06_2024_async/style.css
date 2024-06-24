@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+header img {
+  height: 120px;
+}
+
+main {
+  text-align: center;
+}
+
+#movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  list-style-type: none;
+}
+
+#movies li {
+  padding: 20px;
+}
+
+#movies img {
+  width: 80%;
+}
+
+#movies h3 {
+  border-bottom: 1px solid black;
+}
