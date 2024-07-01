@@ -1,0 +1,28 @@
+header {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+header > h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+header > input,
+header > button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 6px 10px;
+  background-color: transparent;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+header > input:hover,
+header > button:hover {
+  border: 2px solid orange;
+}
