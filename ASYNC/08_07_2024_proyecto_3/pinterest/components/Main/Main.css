@@ -1,0 +1,26 @@
+#gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+ 
+}
+
+#gallery li {
+  height: 300px;
+  width: auto;
+  flex-grow: 1;
+}
+
+#gallery img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+#gallery:hover img:not(:hover){
+  filter: saturate(30%) blur(1px);
+}
