@@ -1,0 +1,45 @@
+.card {
+  background-color: rgb(31, 31, 31);
+  padding: 10px;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.card > * {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.card.minimal {
+  height: 80px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin: 20px;
+}
+
+.card.minimal > img {
+  height: 100%;
+  width: auto;
+  border-radius: 12px;
+}
+
+.card.expanded {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card.expanded > img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card.expanded:hover, .card.minimal:hover{
+  background-color: rgb(76, 76, 76);
+}
