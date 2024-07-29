@@ -1,0 +1,6 @@
+#movies img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}

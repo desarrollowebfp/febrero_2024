@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}

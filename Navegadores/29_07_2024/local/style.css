@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  color: black;
+  
+}
+
+body.dark {
+  background-color: black;
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color:inherit
+}
