@@ -1,0 +1,14 @@
+#userList{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#userList > div{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  flex-grow: 1;
+  text-align: center;
+}
