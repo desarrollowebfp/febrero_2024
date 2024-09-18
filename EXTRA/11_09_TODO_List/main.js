@@ -1,21 +1,5 @@
 //TODO
-const todos = [
-  {
-    text: "Limpiar la cocina",
-    completed: false,
-    id: 1,
-  },
-  {
-    text: "Programar",
-    completed: true,
-    id: 2,
-  },
-  {
-    text: "Pasear al perro",
-    completed: false,
-    id: 3,
-  },
-];
+let todos = [];
 
 const addTodo = () => {
   //Recuperamos el input
@@ -35,14 +19,16 @@ const addTodo = () => {
   const todoList = document.querySelector("#todoList");
   todoList.innerHTML = "";
   //Pintar el nuevo todoList
-  renderTodoList();
+  renderTodoList(todos);
+  //Guardamos el todos en el localStorage
+  localStorage.setItem("todolist", JSON.stringify(todos));
 };
 
-const renderTodoList = () => {
+const renderTodoList = (list) => {
   //Recuperamos el elemento lista donde pintar los todo
   const todoList = document.querySelector("#todoList");
   //Recorremos la tarea
-  for (const todo of todos) {
+  for (const todo of list) {
     if (todo.completed) {
       //Li vacio
       const li = document.createElement("li");
@@ -52,6 +38,9 @@ const renderTodoList = () => {
       p.className = "completed";
       p.addEventListener("click", () => {
         p.classList.toggle("completed");
+        const actualPosition = todos.indexOf(todo);
+        todos[actualPosition].completed = !todos[actualPosition].completed;
+        localStorage.setItem("todolist", JSON.stringify(todos));
       });
       //Añadimos la p al li
       li.appendChild(p);
@@ -60,8 +49,11 @@ const renderTodoList = () => {
       btn.textContent = "❌";
       //Añadimos el evento al botón
       btn.addEventListener("click", () => {
+        const actualPosition = todos.indexOf(todo);
+        console.log(actualPosition);
+        todos.splice(actualPosition, 1)
         li.remove();
-        console.log(todo.id)
+        localStorage.setItem("todolist", JSON.stringify(todos));
       });
       //Añadimos el boton al li
       li.appendChild(btn);
@@ -75,6 +67,9 @@ const renderTodoList = () => {
       p.textContent = todo.text;
       p.addEventListener("click", () => {
         p.classList.toggle("completed");
+        const actualPosition = todos.indexOf(todo);
+        todos[actualPosition].completed = !todos[actualPosition].completed;
+        localStorage.setItem("todolist", JSON.stringify(todos));
       });
       //Añadimos la p al li
       li.appendChild(p);
@@ -83,10 +78,10 @@ const renderTodoList = () => {
       btn.textContent = "❌";
       //Añadimos el evento al botón
       btn.addEventListener("click", () => {
+        const actualPosition = todos.indexOf(todo);
+        todos.splice(actualPosition, 1)
         li.remove();
-        //Vamos a buscar la posicion de elemento en base a su id
-        const position = todos.indexOf(todo.id);
-        console.log(position)
+        localStorage.setItem("todolist", JSON.stringify(todos));
       });
       //Añadimos el boton al li
       li.appendChild(btn);
@@ -99,4 +94,27 @@ const renderTodoList = () => {
 //Añadimos el evento addTodo
 document.querySelector("#addBtn").addEventListener("click", addTodo);
 
-renderTodoList();
+//Vamos a añadir un evento a el documento, para cuando cargue el contenido del DOM compruebe si hay algo en el localStorage, y si lo tiene que lo pinte y si no que pinte un listado por defecto
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("todolist")) {
+    const localTodoList = JSON.parse(localStorage.getItem("todolist"));
+    renderTodoList(localTodoList);
+    todos = localTodoList;
+  } else {
+    todos = [
+      {
+        text: "Limpiar la cocina",
+        completed: false,
+      },
+      {
+        text: "Programar",
+        completed: true,
+      },
+      {
+        text: "Pasear al perro",
+        completed: false,
+      },
+    ];
+    renderTodoList(todos);
+  }
+});
