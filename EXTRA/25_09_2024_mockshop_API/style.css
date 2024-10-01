@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Comfortaa", sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+header,
+footer {
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  text-align: center;
+}
+
+#products {
+  border: 1px dashed rgba(128, 128, 128, 0.544);
+  margin: 10px;
+  padding: 10px;
+  min-height: 600px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 400px;
+  gap: 10px;
+  background-color: rgb(243, 243, 243);
+}
+
+#products li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#products img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#products .description {
+  font-size: 10px;
+  width: 200px;
+  text-align: justify;
+}
