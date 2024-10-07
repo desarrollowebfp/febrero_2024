@@ -1,0 +1,11 @@
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+}
