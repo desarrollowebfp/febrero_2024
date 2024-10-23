@@ -1,0 +1,18 @@
+{
+  "name": "23-10-2024-libreriasjs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "howler": "^2.2.4",
+    "typed.js": "^2.1.0"
+  }
+}
