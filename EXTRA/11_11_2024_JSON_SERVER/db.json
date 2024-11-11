@@ -1,0 +1,37 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Transformers: One",
+      "year": 2024,
+      "poster": "https://pics.filmaffinity.com/Transformers_One-120735479-large.jpg"
+    },
+    {
+      "id": 2,
+      "title": "No one will save you",
+      "year": 2023,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjJhYzMwMjItYTI4MC00N2MxLThhN2UtNjY1MjNiOTE5N2JkXkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+      "title": "Alien: Romulus",
+      "poster": "https://media.themoviedb.org/t/p/w220_and_h330_face/s8aT2GMGu8h42zEf50jB5bVuRFc.jpg",
+      "year": "2024",
+      "id": 3
+    },
+    {
+      "title": "Pesadilla antes de Navidad",
+      "poster": "https://m.media-amazon.com/images/I/71UvWgIQNiL._AC_UF894,1000_QL80_.jpg",
+      "year": "1993",
+      "id": 5
+    }
+  ],
+  "shows": [
+    {
+      "id": 1,
+      "title": "The Penguin",
+      "year": 2024,
+      "seasons": 1,
+      "poster": "https://image.tmdb.org/t/p/original/rtizNyn1c1um42rYZyyXqYZWfk1.jpg"
+    }
+  ]
+}
