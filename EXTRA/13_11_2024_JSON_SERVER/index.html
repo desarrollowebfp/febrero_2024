@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" / >
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Movies API</title>
+  </head>
+  <body>
+    <h1>Movies API</h1>
+    <!-- ADD MOVIE FORM -->
+    <form id="addMovieForm">
+      <h2>Add New Movie</h2>
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="poster" placeholder="Poster URL" required />
+      <input type="number" id="year" placeholder="Year" required />
+      <input type="text" id="director" placeholder="Director" required />
+      <button type="submit">Add Movie</button>
+    </form>
+    <!-- EDIT MOVIE FORM -->
+    <form id="editMovieForm">
+      <h2>Edit Movie</h2>
+      <input type="hidden" id="editId" />
+      <input type="text" id="editTitle" placeholder="Title" required />
+      <input type="text" id="editPoster" placeholder="Poster URL" required />
+      <input type="number" id="editYear" placeholder="Year" required />
+      <input type="text" id="editDirector" placeholder="Director" required />
+      <button type="submit">Update Movie</button>
+    </form>
+    <!-- MOVIES CONTAINER -->
+    <section class="movie-container" id="movieContainer"></section>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(23, 23, 23);
+  color: whitesmoke;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  color: #f57200;
+}
+
+input,
+button {
+  display: block;
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background-color: #ec6a00;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #515151;
+}
+
+#editMovieForm {
+  display: none;
+}
