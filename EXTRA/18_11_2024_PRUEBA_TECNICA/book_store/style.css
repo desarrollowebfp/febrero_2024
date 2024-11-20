@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#available_books {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+}
+
+#available_books img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}

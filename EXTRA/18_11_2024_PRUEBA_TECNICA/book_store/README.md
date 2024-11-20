@@ -19,7 +19,7 @@ Para arrancar el proyecto en local tienes que instalar las dependencias con `npm
 
 ## Puntos completados
 
-[] Visualización de Libros Disponibles
+[X] Visualización de Libros Disponibles
 
 [] Creación de Lista de Lectura
 
