@@ -21,13 +21,13 @@ Para arrancar el proyecto en local tienes que instalar las dependencias con `npm
 
 [X] Visualización de Libros Disponibles
 
-[] Creación de Lista de Lectura
+[X] Creación de Lista de Lectura
 
 [] Filtrado de Libros por Género
 
-[] Sincronización de Estado
+[X] Sincronización de Estado
 
-[] Persistencia de Datos
+[X] Persistencia de Datos
 
 [] Sincronización entre pestañas
 
